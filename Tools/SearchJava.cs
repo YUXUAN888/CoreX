@@ -8,12 +8,11 @@ using System.Threading.Tasks;
 
 namespace CoreX.Tools
 {
-    internal class SearchJava
+    public class SearchJava
     {
         public static List<string> search()
         {
             List<string> paths = new List<string>();
-
             string javaKey = "SOFTWARE\\JavaSoft\\Java Runtime Environment";
             using (RegistryKey rk = Registry.LocalMachine.OpenSubKey(javaKey))
             {
@@ -41,7 +40,7 @@ namespace CoreX.Tools
             string[] possiblePaths = {
             @"C:\Program Files\Java\",
             @"C:\Program Files (x86)\Java\"
-        };
+            };
 
             foreach (string path in possiblePaths)
             {

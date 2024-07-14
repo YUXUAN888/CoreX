@@ -1,4 +1,3 @@
-# CoreX
-## updating
-###for FSM_X
-###Public
+# CoreX for FSM_X
+## Integrated Core
+## develop
